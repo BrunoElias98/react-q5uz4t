@@ -1,0 +1,11 @@
+.s-favorites {
+  padding-top: 20px;
+  padding-bottom: 100px;
+  .all {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: flex-start;
+    grid-gap: 40px 26px;
+    padding: 0px 35px;
+  }
+}

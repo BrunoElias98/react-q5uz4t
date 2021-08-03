@@ -1,0 +1,99 @@
+.s-resultados {
+  padding-top: 20px;
+  padding-bottom: 120px;
+  .item-result {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1210px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    h3 {
+      width: 150px;
+      font: 600 28px/28px 'Domaine Disp';
+      color: #2F3640;
+      margin-right: 56px;
+      margin-top: 48px;
+    }
+    .all {
+      flex: 1 1 auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: flex-start;
+      grid-gap: 25px 26px;
+    }
+  }
+  .empty-search {
+    width: 500px;
+    height: 440px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../img/bg-empty-search.svg") no-repeat center center;
+    h3 {
+      max-width: 312px;
+      text-align: center;
+      font-family: 'Domaine Disp';
+      font-size: 28px;
+      line-height: 28px;
+      color: #2F3640;
+      margin-bottom: 22px;
+    }
+    p {
+      max-width: 310px;
+      text-align: center;
+      color: #656d78;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 22px;
+      margin-bottom: 26px;
+    }
+    a {
+      @include style_btn_green(310px, 50px);
+    }
+  }
+  @media(max-width: 480px) {
+    padding: 0;
+    .container {
+      padding: 0;
+    }
+    .item-result {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+      h3 {
+        margin: 0;
+        width: 100%;
+        height: 48px;
+        background: linear-gradient(183.21deg, #F9F9F9 1.1%, #F5F5F5 81.13%);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        font-family: Gotham;
+        margin-bottom: 15px;
+      }
+      .all {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+      }
+    }
+    .empty-search {
+      background: url("../img/bg-sem-busca.jpg") no-repeat center center;
+      width: 100%;
+      background-size: cover;
+      margin-top: 0;
+      h3, p, a {
+        display: none;
+      }
+    }
+  }
+}

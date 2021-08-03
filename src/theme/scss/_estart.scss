@@ -1,0 +1,129 @@
+.MuiContainer-maxWidthLg {
+  max-width: 100% !important;
+}
+
+.MuiLink-underlineHover {
+  text-decoration: none !important;
+}
+
+.box-menu {
+  ul {
+    width: 100%;
+    height: 46px;
+    display: grid;
+    grid-template-columns: 262px 230px 207px 205px 196px 1fr;
+    padding: 0;
+    align-items: center;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    overflow: hidden;
+    li {
+      position: relative;
+      @include detail-line;
+      &:before {
+        top: -10px;
+        left: 0px;
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+        a {
+          span {
+            color: #0E65D8;
+          }
+        }
+      }
+      &.active {
+        a {
+          &:after {
+            width: 100%;
+          }
+          .arrow {
+            background: url("../img/caret-blue.svg") no-repeat center center;
+          }
+        }
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:after {
+          content: "";
+          width: 0%;
+          height: 3px;
+          background-color: #0E65D8;
+          position: absolute;
+          bottom: -13px;
+          left: 0;
+        }
+        img {
+          margin-right: 7.77px;
+        }
+        span {
+          color: #363E4A;
+          letter-spacing: -0.5px;
+          line-height: 19px;
+          font-size: 16px;
+          font-weight: 500;
+        }
+        .arrow {
+          background: url("../img/caret-gray.svg") no-repeat center center;
+          width: 10px;
+          height: 8px;
+          margin-left: 8px;
+          transition: all .3s;
+        }
+        &:hover {
+          &:after {
+            width: 100%;
+            transition: all .4s;
+          }
+          .arrow {
+            background: url("../img/caret-blue.svg") no-repeat center center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.s-depoimentos .slide-depoimentos .swiper-pagination { 
+  position: absolute !important;
+}
+
+.s-depoimentos .slide-depoimentos .swiper-slide .depo .aspas {
+  top: -80px !important;
+}
+
+.s-cadastro .box-pagamento .dados .item .info span {
+  max-width: 500px !important;
+}
+
+.swiper-button-next {
+  background-image: url(../img/arrow-next-slide-orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background-image: url(../img/arrow-prev-slide-orange.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.img-border-black {
+  background-image: url(../img/borda-preta.png);
+  width: 700px;
+  height: 650px;
+}

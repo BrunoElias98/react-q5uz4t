@@ -1,0 +1,72 @@
+@mixin detail-line() {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: url("../img/line-detail.png") no-repeat center center;
+    width: 2px;
+    height: 38px;
+  }
+}
+
+@mixin style_btn_green($width, $height) {
+  width: $width;
+  height: $height;
+  background-color: $verde-principal;
+  text-align: center;
+  line-height: $height;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover {
+    background-color: #70D500;
+    box-shadow: 0 15px 25px -10px rgba(114,177,44,0.50);
+    transition: all .3s;
+  }
+}
+
+@mixin style_btn_gray($width, $height) {
+  width: $width;
+  height: $height;
+  background-color:  #bbbbbb;
+  text-align: center;
+  line-height: $height;
+  color: #FFFFFF;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-size: 14px;
+  display: block;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover {
+    background-color: #adabab;
+    transition: all .3s;
+  }
+}
+
+@mixin style_btn_green_outline($width, $height) {
+  width: $width;
+  height: $height;
+  background: #FFFFFF;
+  border: 1.2px solid $verde-principal;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 11px;
+  color: $verde-principal;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover {
+    background-color: $verde-principal;
+    color: #ffffff;
+    transition: all .3s;
+  }
+}
